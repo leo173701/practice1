@@ -13,3 +13,8 @@ def geeks_view(request):
     }
     # return response with template and context
     return render(request, "geeks.html", context)
+
+
+def geeks2_view(request):
+    context = {'x': 1}
+    return render(request, "geeks2.html", context)
